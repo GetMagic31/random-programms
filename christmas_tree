@@ -1,0 +1,21 @@
+import random
+
+print("*")
+for zeile in range(2, 11):
+    for spalte in range(zeile):
+        wuerfelergebnis = random.randint(1, 10)
+        if wuerfelergebnis == 6:
+            print("o", end='')
+        else:
+            print("#", end='')
+    print()
+    # if zeile == 5:
+        # print("-"*5)
+    # elif zeile == 7:
+        # print("#o###o#")
+    # elif zeile == 9:
+        # print("####o####")
+    # else:
+        # print("#" * zeile)
+for zeile in range(3):
+    print("#")
